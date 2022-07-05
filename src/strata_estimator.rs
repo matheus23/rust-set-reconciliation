@@ -63,15 +63,12 @@ impl<const S: usize> Estimator<S> {
             }
 
             let ibf = self.strata[level as usize];
-            let mut iter = ibf.recover_items();
+            let mut iter = ibf.recover();
             let mut recovered = 0;
             while let Some(_) = iter.next() {
                 recovered += 1;
             }
             let ok = iter.is_fully_recovered();
-
-            // TODO: There's a bug here. For some reason sometimes recovered
-            // filters aren't "fully" recovered, even though they should be.
 
             if !ok {
                 return (2 << level) * count + (1 << level);

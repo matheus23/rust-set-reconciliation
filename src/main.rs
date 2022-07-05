@@ -1,3 +1,6 @@
+#[macro_use]
+extern crate proptest;
+
 mod ibf;
 mod strata_estimator;
 
@@ -7,7 +10,7 @@ use ibf::*;
 use strata_estimator::*;
 
 fn main() {
-    test_ibfs();
+    test_strata();
 }
 
 fn test_strata() {
@@ -74,7 +77,7 @@ fn test_ibfs() {
         diff_set.insert(*blake3::hash(item.as_ref()).as_bytes(), ());
     }
 
-    let mut diff_iter = (ibf - ibf2).recover_items();
+    let mut diff_iter = (ibf - ibf2).recover();
     let mut count = 0;
 
     while let Some(item) = diff_iter.next() {

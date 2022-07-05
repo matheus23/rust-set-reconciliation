@@ -1,5 +1,10 @@
-use std::ops::{Add, AddAssign, Sub, SubAssign};
+use std::{
+    collections::HashSet,
+    iter,
+    ops::{Add, AddAssign, Sub, SubAssign},
+};
 
+use blake3::Hash;
 use xxhash_rust::xxh3::{xxh3_64, xxh3_64_with_seed};
 
 pub const HASH_SIZE: usize = 32;
@@ -114,11 +119,53 @@ impl SubAssign for Cell {
     }
 }
 
-fn map_rand_to_range(rand: u64, range: u64) -> u64 {
-    let last_32 = rand & 0xFFFF_FFFF;
-    let first_32 = rand >> 32;
-    let trunc = last_32 ^ first_32;
-    trunc * range >> 32
+// fn map_rand_to_range(rand: u64, range: u64) -> u64 {
+//     let last_32 = rand & 0xFFFF_FFFF;
+//     let first_32 = rand >> 32;
+//     let trunc = last_32 ^ first_32;
+//     trunc * range >> 32
+// }
+
+pub fn distinct_hashes_in_range<const N: usize, const K: usize>(
+    item_hash: &[u8],
+) -> impl Iterator<Item = usize> + '_ {
+    let mut used_nums = [false; N];
+
+    let bitmask = (if N.count_ones() == 1 {
+        N
+    } else {
+        N.next_power_of_two()
+    } - 1);
+
+    let mut seed = 0;
+    let mut count = 0;
+
+    iter::from_fn(move || {
+        if count >= K {
+            return None;
+        }
+
+        let mut hash = (xxh3_64_with_seed(item_hash, seed) as usize) & bitmask;
+
+        loop {
+            // Try to generate something within bounds
+            while hash >= N {
+                seed += 1;
+                hash = (xxh3_64_with_seed(item_hash, seed) as usize) & bitmask;
+            }
+
+            // If it has already been generated, try again
+            if !used_nums[hash] {
+                break;
+            }
+            seed += 1;
+            hash = (xxh3_64_with_seed(item_hash, seed) as usize) & bitmask;
+        }
+
+        used_nums[hash] = true;
+        count += 1;
+        Some(hash)
+    })
 }
 
 impl<const N: usize, const K: usize> IBF<N, K> {
@@ -131,17 +178,23 @@ impl<const N: usize, const K: usize> IBF<N, K> {
     }
 
     pub fn insert_hash(&mut self, item_hash: &[u8; HASH_SIZE]) {
-        for seed in 0..K {
-            let idx = map_rand_to_range(xxh3_64_with_seed(item_hash, seed as u64), N as u64);
+        for idx in distinct_hashes_in_range::<N, K>(item_hash) {
             self.cells[idx as usize] += Cell::new(*item_hash);
         }
     }
 
     pub fn remove_hash(&mut self, item_hash: &[u8; HASH_SIZE]) {
-        for seed in 0..K {
-            let idx = map_rand_to_range(xxh3_64_with_seed(item_hash, seed as u64), N as u64);
-            self.cells[idx as usize] -= Cell::new(*item_hash);
+        for idx in distinct_hashes_in_range::<N, K>(item_hash) {
+            self.cells[idx] -= Cell::new(*item_hash);
         }
+    }
+
+    pub fn insert_blake3(&mut self, hash: &Hash) {
+        self.insert_hash(hash.as_bytes());
+    }
+
+    pub fn remove_blake3(&mut self, hash: &Hash) {
+        self.remove_hash(hash.as_bytes());
     }
 
     pub fn find_pure(&self) -> Option<PureCell> {
@@ -162,8 +215,17 @@ impl<const N: usize, const K: usize> IBF<N, K> {
         true
     }
 
-    pub fn recover_items(self) -> RecoverIterator<N, K> {
+    pub fn recover(self) -> RecoverIterator<N, K> {
         RecoverIterator { filter: self }
+    }
+
+    pub fn recover_items(self) -> (Vec<PureCell>, Self) {
+        let mut iter = self.recover();
+        let mut vec = Vec::new();
+        while let Some(item) = iter.next() {
+            vec.push(item);
+        }
+        (vec, iter.filter)
     }
 }
 
@@ -229,6 +291,74 @@ impl<const N: usize, const K: usize> Default for IBF<N, K> {
     fn default() -> Self {
         Self {
             cells: [Cell::default(); N],
+        }
+    }
+}
+#[cfg(test)]
+mod ibf_tests {
+    use std::collections::HashSet;
+
+    use super::distinct_hashes_in_range;
+    use super::IBF;
+    use blake3::Hash;
+    use proptest::{collection::hash_set, prelude::*};
+
+    fn hashes(max_num: usize) -> impl Strategy<Value = HashSet<Hash>> {
+        hash_set(any::<String>(), 0..max_num).prop_map(|set| {
+            set.iter()
+                .map(|elem| blake3::hash(elem.as_bytes()))
+                .collect()
+        })
+    }
+
+    fn recoverable_ibf<const N: usize>() -> impl Strategy<Value = (usize, IBF<N>)> {
+        hash_set(any::<String>(), 0..(N / 2)).prop_map(|set| {
+            let mut ibf: IBF<N> = IBF::default();
+            for elem in set.iter() {
+                ibf.insert(elem);
+            }
+            (set.len(), ibf)
+        })
+    }
+
+    proptest! {
+        #[test]
+        fn ibf_recovers((elems, ibf) in recoverable_ibf::<50>()) {
+            let mut iter = ibf.recover();
+            let mut count = 0;
+            while let Some(_) = iter.next() {
+                count += 1;
+            }
+            assert!(iter.is_fully_recovered());
+            assert_eq!(count, elems);
+        }
+
+        #[test]
+        fn ibf_recovers2(hs in hashes(40)) {
+            let mut ibf: IBF<80> = IBF::default();
+            for hash in hs.iter() {
+                ibf.insert_blake3(hash);
+            }
+
+            let mut iter = ibf.recover();
+            let mut count = 0;
+            while let Some(_) = iter.next() {
+                count += 1;
+            }
+            assert!(iter.is_fully_recovered());
+            assert_eq!(count, hs.len());
+        }
+
+        #[test]
+        fn distinct_hashing(s in any::<String>()) {
+            const R: usize = 10;
+            let mut bits = [false; R];
+            for i in distinct_hashes_in_range::<R, 4>(s.as_bytes()) {
+                if bits[i] {
+                    panic!("Generated {i} twice!");
+                }
+                bits[i] = true;
+            }
         }
     }
 }
