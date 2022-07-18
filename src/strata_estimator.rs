@@ -21,21 +21,8 @@ impl<const S: usize> Default for Estimator<S> {
 }
 
 impl<const S: usize> Estimator<S> {
-    fn leading_zeros(item_hash: &[u8; HASH_SIZE]) -> u32 {
-        let mut i = 0;
-        let mut total = 0;
-        loop {
-            let zeros = item_hash[i].leading_zeros();
-            total += zeros;
-            i += 1;
-            if zeros != 8 || i >= HASH_SIZE {
-                return total;
-            }
-        }
-    }
-
     fn bucket_for_hash(item_hash: &[u8; HASH_SIZE]) -> usize {
-        cmp::min(S - 1, Self::leading_zeros(item_hash) as usize)
+        cmp::min(S - 1, leading_zeros(item_hash) as usize)
     }
 
     pub fn insert<A: AsRef<[u8]>>(&mut self, item: A) {
@@ -112,5 +99,56 @@ impl<const S: usize> Sub for Estimator<S> {
     fn sub(mut self, rhs: Self) -> Self::Output {
         self -= rhs;
         self
+    }
+}
+
+fn leading_zeros(item_hash: &[u8; HASH_SIZE]) -> u32 {
+    let mut i = 0;
+    let mut total = 0;
+    loop {
+        let zeros = item_hash[i].leading_zeros();
+        total += zeros;
+        i += 1;
+        if zeros != 8 || i >= HASH_SIZE {
+            return total;
+        }
+    }
+}
+
+#[cfg(test)]
+mod strata_estimator_tests {
+    use hex::FromHexError;
+
+    use crate::ibf::HASH_SIZE;
+
+    use super::leading_zeros;
+
+    #[test]
+    fn test_leading_zeros_256() {
+        assert_eq!(leading_zeros(&[0u8; HASH_SIZE]), 256)
+    }
+
+    #[test]
+    fn test_leading_zeros_128() {
+        let zeros_hash = parse_hash_hex(
+            "00000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF".into(),
+        )
+        .unwrap();
+        assert_eq!(leading_zeros(&zeros_hash), 128)
+    }
+
+    #[test]
+    fn test_leading_zeros_12() {
+        let zeros_hash = parse_hash_hex(
+            "000F0000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF".into(),
+        )
+        .unwrap();
+        assert_eq!(leading_zeros(&zeros_hash), 12)
+    }
+
+    fn parse_hash_hex(hex: String) -> Result<[u8; HASH_SIZE], FromHexError> {
+        let mut hash = [0u8; HASH_SIZE];
+        hex::decode_to_slice(hex, &mut hash)?;
+        Ok(hash)
     }
 }
