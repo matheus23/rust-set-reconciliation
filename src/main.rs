@@ -14,7 +14,8 @@ use strata_estimator::*;
 
 fn main() {
     // test_recoverability();
-    test_strata();
+    // test_strata();
+    test_many_estimations();
 }
 
 const N: usize = 80;
@@ -71,6 +72,26 @@ fn random_elem() -> [u8; HASH_SIZE] {
     randoms
 }
 
+fn test_many_estimations() {
+    let count_step = 10_000;
+    let max_count = 10_000_000;
+    for i in 0..(max_count / count_step) {
+        let item_count = i * count_step;
+        let estimated = test_estimator(item_count);
+        let error_pct = 100.0 * (estimated as f64 - item_count as f64).abs() / (item_count as f64);
+        println!("Estimated: {estimated}\tActual: {item_count}\tError percentage: {error_pct}");
+    }
+}
+
+fn test_estimator(item_count: usize) -> u64 {
+    const S: usize = 16;
+    let mut estimator = Estimator::<S>::default();
+    for i in 0..item_count {
+        estimator.insert(&format!("Hello, for the {i}th time!"));
+    }
+    estimator.estimate()
+}
+
 fn test_strata() {
     const S: usize = 16;
     let mut estimator1 = Estimator::<S>::default();
@@ -78,7 +99,7 @@ fn test_strata() {
     let mut difference = Vec::new();
 
     let item_count = 1_000_000;
-    let diff_count = 100;
+    let diff_count = 1000;
 
     for i in 0..item_count {
         let item = format!("Hello, for the {i}th time!");
