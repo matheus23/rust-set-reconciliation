@@ -28,7 +28,7 @@ impl<const S: usize> Estimator<S> {
             let zeros = item_hash[i].leading_zeros();
             total += zeros;
             i += 1;
-            if zeros != 16 || i >= HASH_SIZE {
+            if zeros != 8 || i >= HASH_SIZE {
                 return total;
             }
         }
