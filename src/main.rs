@@ -15,6 +15,7 @@ use strata_estimator::*;
 fn main() {
     // test_recoverability();
     // test_strata();
+    coz::thread_init();
     test_many_estimations();
 }
 
@@ -88,6 +89,7 @@ fn test_estimator(item_count: usize) -> u64 {
     let mut estimator = Estimator::<S>::default();
     for i in 0..item_count {
         estimator.insert(&format!("Hello, for the {i}th time!"));
+        coz::progress!();
     }
     estimator.estimate()
 }

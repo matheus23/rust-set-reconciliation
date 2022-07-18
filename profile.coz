@@ -1,0 +1,484 @@
+startup	time=1658152000667709229
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1220	speedup=0.80	duration=500046976	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=854760
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:171	speedup=0.35	duration=500066640	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1411153
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:42	speedup=0.70	duration=498696248	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1409485
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	speedup=0.00	duration=500116077	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1431259
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/mod.rs:153	speedup=0.20	duration=499914229	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1404500
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/intrinsics.rs:2135	speedup=0.25	duration=498355365	selected-samples=7
+throughput-point	name=src/main.rs:92	delta=1429101
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:171	speedup=0.30	duration=499816296	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1433447
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/alloc.rs:359	speedup=0.35	duration=500061570	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1420926
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:14	speedup=0.00	duration=500115075	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1407353
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/string.rs:500	speedup=0.10	duration=499967882	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1388770
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1381	speedup=0.95	duration=500063277	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1407224
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:238	speedup=0.65	duration=499385028	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1380156
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:607	speedup=0.15	duration=499947503	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1419882
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	speedup=0.00	duration=500105350	selected-samples=3
+throughput-point	name=src/main.rs:92	delta=1337683
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:238	speedup=0.95	duration=500068135	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1412823
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1189	speedup=0.00	duration=500114224	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1445666
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1348	speedup=0.00	duration=500069296	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1416937
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:238	speedup=0.65	duration=499468435	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1430808
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1196	speedup=0.50	duration=500100886	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1429043
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:146	speedup=0.00	duration=500109928	selected-samples=7
+throughput-point	name=src/main.rs:92	delta=1428341
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:45	speedup=0.00	duration=500104031	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1446485
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:612	speedup=0.30	duration=499511286	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1429759
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:608	speedup=0.60	duration=500105040	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1058250
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:288	speedup=0.55	duration=499503022	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1252226
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1355	speedup=0.00	duration=500065618	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1336077
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	speedup=0.65	duration=499417304	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1392544
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:0	speedup=0.80	duration=495311165	selected-samples=6
+throughput-point	name=src/main.rs:92	delta=1239308
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:232	speedup=0.00	duration=500113917	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1372707
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:195	speedup=0.75	duration=497118295	selected-samples=4
+throughput-point	name=src/main.rs:92	delta=1352435
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	speedup=0.35	duration=499719635	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1371004
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:612	speedup=0.45	duration=500109551	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1357452
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	speedup=0.80	duration=496114568	selected-samples=5
+throughput-point	name=src/main.rs:92	delta=1425219
+runtime	time=500151423
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/alloc.rs:89	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:607	count=55
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:608	count=24
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:612	count=43
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:0	count=31
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:171	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:188	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:288	count=41
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:361	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/string.rs:500	count=40
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/vec/mod.rs:815	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/vec/mod.rs:1803	count=3
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:0	count=81
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:187	count=54
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	count=144
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:195	count=110
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:238	count=55
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:427	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:429	count=23
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1182	count=40
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1186	count=21
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1189	count=4
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1193	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1194	count=24
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1196	count=39
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1219	count=15
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1220	count=36
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1224	count=36
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1348	count=62
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1352	count=7
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1355	count=25
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1369	count=30
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1370	count=10
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1374	count=10
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1377	count=11
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1381	count=26
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1382	count=18
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1829	count=9
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1886	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:0	count=27
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:45	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:230	count=12
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:232	count=42
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:234	count=3
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	count=70
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:249	count=3
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:250	count=7
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:251	count=6
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:252	count=3
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:257	count=13
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:258	count=7
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:271	count=9
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:273	count=26
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:279	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:288	count=17
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/intrinsics.rs:2135	count=108
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/num/uint_macros.rs:1226	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/const_ptr.rs:455	count=14
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/mut_ptr.rs:467	count=10
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/result.rs:1033	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/index.rs:209	count=56
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:0	count=63
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:146	count=72
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/mod.rs:153	count=19
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/alloc.rs:359	count=29
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:14	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:42	count=27
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	speedup=0.00	duration=500062902	selected-samples=6
+throughput-point	name=src/main.rs:92	delta=1410129
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:361	speedup=0.80	duration=502465011	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1347890
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/index.rs:209	speedup=0.95	duration=499157516	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1277661
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	speedup=0.05	duration=499844465	selected-samples=5
+throughput-point	name=src/main.rs:92	delta=1425419
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:607	speedup=0.00	duration=500063557	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1445738
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1355	speedup=0.35	duration=500067320	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1430984
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	speedup=0.00	duration=500104876	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1426084
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1194	speedup=0.10	duration=499862827	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1412389
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1381	speedup=0.00	duration=500020167	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1444843
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:146	speedup=0.60	duration=495312364	selected-samples=8
+throughput-point	name=src/main.rs:92	delta=1438746
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:171	speedup=0.75	duration=499366988	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1434997
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:251	speedup=0.00	duration=500114216	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1412733
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1224	speedup=0.00	duration=500114727	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1429115
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:187	speedup=0.80	duration=500062394	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1436892
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	speedup=0.00	duration=500063936	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1419958
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:0	speedup=0.40	duration=499699591	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1447978
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1369	speedup=0.00	duration=500104281	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1430835
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	speedup=0.30	duration=499461928	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1434439
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/alloc.rs:359	speedup=0.10	duration=500098903	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1404693
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:429	speedup=0.00	duration=500062284	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1430319
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	speedup=0.00	duration=500070114	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1443937
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:195	speedup=0.10	duration=499963622	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1421519
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:42	speedup=0.40	duration=500090470	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1432296
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:171	speedup=0.20	duration=500066201	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1426424
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/index.rs:209	speedup=0.90	duration=498318729	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1427513
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:0	speedup=0.95	duration=493420357	selected-samples=7
+throughput-point	name=src/main.rs:92	delta=1434848
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:288	speedup=0.50	duration=500113467	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1440359
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:146	speedup=0.00	duration=500116548	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1440396
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:250	speedup=0.35	duration=500113809	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1432295
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:195	speedup=0.85	duration=497559789	selected-samples=3
+throughput-point	name=src/main.rs:92	delta=1442690
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/intrinsics.rs:2135	speedup=0.90	duration=499167655	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1407073
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:251	speedup=0.65	duration=500053230	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1429333
+runtime	time=500098605
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/alloc.rs:89	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:607	count=85
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:608	count=42
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:612	count=78
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:0	count=68
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:171	count=50
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:188	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:288	count=73
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:361	count=5
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/string.rs:500	count=86
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/vec/mod.rs:815	count=5
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/vec/mod.rs:1803	count=4
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:0	count=169
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:187	count=124
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	count=285
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:194	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:195	count=218
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:238	count=94
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:427	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:429	count=39
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1182	count=74
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1186	count=32
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1189	count=4
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1193	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1194	count=44
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1196	count=78
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1219	count=25
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1220	count=65
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1224	count=69
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1348	count=130
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1352	count=10
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1355	count=56
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1369	count=59
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1370	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1373	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1374	count=29
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1377	count=18
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1381	count=50
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1382	count=39
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1829	count=20
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1886	count=8
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:0	count=50
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:45	count=46
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:230	count=23
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:232	count=84
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:234	count=3
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	count=118
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:236	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:249	count=6
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:250	count=18
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:251	count=25
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:252	count=4
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:257	count=24
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:258	count=19
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:271	count=15
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:273	count=46
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:279	count=45
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:288	count=38
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/intrinsics.rs:2135	count=214
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/iter/traits/accum.rs:45	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/num/uint_macros.rs:1226	count=40
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/const_ptr.rs:455	count=21
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/mut_ptr.rs:467	count=15
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/result.rs:1033	count=3
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/index.rs:209	count=102
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:0	count=124
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:146	count=165
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/mod.rs:153	count=37
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/alloc.rs:359	count=63
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:14	count=40
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:42	count=50
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:0	speedup=0.55	duration=499017667	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1428803
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1355	speedup=0.00	duration=500109210	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1401049
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/const_ptr.rs:455	speedup=0.95	duration=500069380	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1442286
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:238	speedup=0.40	duration=499664135	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1441810
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	speedup=0.55	duration=496763997	selected-samples=6
+throughput-point	name=src/main.rs:92	delta=1430005
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:238	speedup=0.50	duration=499063936	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1434058
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:187	speedup=0.35	duration=498008330	selected-samples=6
+throughput-point	name=src/main.rs:92	delta=1435366
+startup	time=1658152054402906027
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1182	speedup=0.10	duration=500077044	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=211881
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:273	speedup=0.00	duration=500064507	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=930459
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:14	speedup=0.00	duration=500109017	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1416525
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:288	speedup=0.30	duration=499168542	selected-samples=3
+throughput-point	name=src/main.rs:92	delta=1343040
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:146	speedup=0.10	duration=499663956	selected-samples=4
+throughput-point	name=src/main.rs:92	delta=1489788
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:288	speedup=0.95	duration=498162349	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1471949
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:14	speedup=0.00	duration=500101154	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1506765
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	speedup=0.00	duration=500066630	selected-samples=5
+throughput-point	name=src/main.rs:92	delta=1508067
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1182	speedup=0.00	duration=500066969	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1421690
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/const_ptr.rs:455	speedup=0.00	duration=500026265	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1513850
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/intrinsics.rs:2135	speedup=0.00	duration=500065457	selected-samples=5
+throughput-point	name=src/main.rs:92	delta=1498644
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1224	speedup=0.95	duration=500096867	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1399888
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	speedup=0.65	duration=496848486	selected-samples=5
+throughput-point	name=src/main.rs:92	delta=1510181
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/string.rs:500	speedup=0.00	duration=500110428	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1526008
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/const_ptr.rs:455	speedup=0.05	duration=500071956	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1505695
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:288	speedup=0.00	duration=500111533	selected-samples=3
+throughput-point	name=src/main.rs:92	delta=1511356
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:279	speedup=0.65	duration=498817797	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1518129
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:171	speedup=0.75	duration=500090925	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1515046
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1348	speedup=0.00	duration=500113162	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1429723
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/intrinsics.rs:2135	speedup=0.75	duration=494778664	selected-samples=7
+throughput-point	name=src/main.rs:92	delta=1523816
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:607	speedup=0.70	duration=498661235	selected-samples=2
+throughput-point	name=src/main.rs:92	delta=1527903
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	speedup=0.00	duration=500092132	selected-samples=7
+throughput-point	name=src/main.rs:92	delta=1536923
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/index.rs:209	speedup=0.00	duration=500063957	selected-samples=3
+throughput-point	name=src/main.rs:92	delta=1484084
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1381	speedup=0.70	duration=500111644	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1504886
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:187	speedup=0.00	duration=500072430	selected-samples=5
+throughput-point	name=src/main.rs:92	delta=1495942
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:279	speedup=0.90	duration=499167506	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1478215
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:195	speedup=0.15	duration=499645835	selected-samples=3
+throughput-point	name=src/main.rs:92	delta=1523673
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:171	speedup=0.40	duration=500064153	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1528107
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1186	speedup=0.85	duration=500114634	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1521346
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	speedup=0.05	duration=500059203	selected-samples=1
+throughput-point	name=src/main.rs:92	delta=1524823
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:238	speedup=0.00	duration=500062336	selected-samples=0
+throughput-point	name=src/main.rs:92	delta=1534371
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	speedup=0.90	duration=495610135	selected-samples=5
+throughput-point	name=src/main.rs:92	delta=1535552
+runtime	time=500144960
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:607	count=33
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:608	count=25
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:612	count=43
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:0	count=59
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:171	count=12
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:188	count=3
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:288	count=44
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:361	count=10
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/string.rs:500	count=26
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/vec/mod.rs:815	count=16
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/vec/mod.rs:1803	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:0	count=86
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:187	count=75
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	count=167
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:195	count=137
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:238	count=20
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:429	count=16
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1182	count=61
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1186	count=14
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1189	count=34
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1193	count=15
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1194	count=34
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1196	count=24
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1219	count=14
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1220	count=37
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1224	count=33
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1348	count=74
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1352	count=5
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1355	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1369	count=50
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1370	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1374	count=23
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1377	count=14
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1381	count=25
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1382	count=21
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1829	count=17
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1886	count=3
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:0	count=17
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:45	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:230	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:232	count=39
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:234	count=7
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	count=128
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:236	count=4
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:249	count=13
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:250	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:251	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:258	count=4
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:273	count=36
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:279	count=24
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:288	count=19
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/intrinsics.rs:2135	count=224
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/iter/traits/accum.rs:45	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/num/uint_macros.rs:1226	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/num/uint_macros.rs:1683	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/const_ptr.rs:455	count=18
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/mut_ptr.rs:467	count=17
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/result.rs:1033	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/index.rs:209	count=58
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:0	count=35
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:146	count=74
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/mod.rs:153	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/alloc.rs:359	count=16
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:14	count=26
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:42	count=23
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	speedup=0.45	duration=498263841	selected-samples=4
+throughput-point	name=src/main.rs:92	delta=1511796
+experiment	selected=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/intrinsics.rs:2135	speedup=0.95	duration=495495900	selected-samples=5
+throughput-point	name=src/main.rs:92	delta=864751
+runtime	time=17479743301
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:607	count=38
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:608	count=25
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/fmt.rs:612	count=46
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:0	count=60
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:171	count=12
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:188	count=3
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:288	count=47
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/raw_vec.rs:361	count=10
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/string.rs:500	count=26
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/vec/mod.rs:815	count=16
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/alloc/src/vec/mod.rs:1803	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:0	count=93
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:187	count=76
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:193	count=174
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:195	count=141
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:238	count=23
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:429	count=19
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1182	count=63
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1186	count=15
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1189	count=35
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1193	count=16
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1194	count=34
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1196	count=28
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1219	count=16
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1220	count=39
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1224	count=35
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1348	count=77
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1352	count=8
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1355	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1369	count=50
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1370	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1374	count=24
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1377	count=14
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1381	count=25
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1382	count=21
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1829	count=18
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/mod.rs:1886	count=3
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:0	count=17
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:45	count=23
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:230	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:232	count=39
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:234	count=8
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:235	count=136
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:236	count=4
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:249	count=13
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:250	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:251	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:258	count=4
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:273	count=37
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:279	count=24
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/fmt/num.rs:288	count=20
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/intrinsics.rs:2135	count=235
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/iter/traits/accum.rs:45	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/num/uint_macros.rs:1226	count=2
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/num/uint_macros.rs:1683	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/const_ptr.rs:455	count=18
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/ptr/mut_ptr.rs:467	count=18
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/result.rs:1033	count=1
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/index.rs:209	count=59
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:0	count=38
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/iter/macros.rs:146	count=77
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/core/src/slice/mod.rs:153	count=22
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/alloc.rs:359	count=16
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:14	count=27
+samples	location=/rustc/a8314ef7d0ec7b75c336af2c9857bfaf43002bfc/library/std/src/sys/unix/alloc.rs:42	count=24
