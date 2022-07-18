@@ -1,5 +1,4 @@
 use std::{
-    collections::HashSet,
     iter,
     ops::{Add, AddAssign, Sub, SubAssign},
 };
@@ -9,12 +8,12 @@ use xxhash_rust::xxh3::{xxh3_64, xxh3_64_with_seed};
 
 pub const HASH_SIZE: usize = 32;
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct IBF<const N: usize, const K: usize = 4> {
     pub cells: [Cell; N],
 }
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct Cell {
     pub id: [u8; HASH_SIZE],
     pub hash: u64,
@@ -294,6 +293,7 @@ impl<const N: usize, const K: usize> Default for IBF<N, K> {
         }
     }
 }
+
 #[cfg(test)]
 mod ibf_tests {
     use std::collections::HashSet;
@@ -301,6 +301,7 @@ mod ibf_tests {
     use super::distinct_hashes_in_range;
     use super::IBF;
     use blake3::Hash;
+    use proptest::tuple;
     use proptest::{collection::hash_set, prelude::*};
 
     fn hashes(max_num: usize) -> impl Strategy<Value = HashSet<Hash>> {
@@ -311,8 +312,10 @@ mod ibf_tests {
         })
     }
 
-    fn recoverable_ibf<const N: usize>() -> impl Strategy<Value = (usize, IBF<N>)> {
-        hash_set(any::<String>(), 0..(N / 2)).prop_map(|set| {
+    fn ibf_filled_up_to_with_size<const N: usize>(
+        max_elems: usize,
+    ) -> impl Strategy<Value = (usize, IBF<N>)> {
+        hash_set(any::<String>(), 0..max_elems).prop_map(|set| {
             let mut ibf: IBF<N> = IBF::default();
             for elem in set.iter() {
                 ibf.insert(elem);
@@ -321,7 +324,35 @@ mod ibf_tests {
         })
     }
 
+    fn recoverable_ibf<const N: usize>() -> impl Strategy<Value = (usize, IBF<N>)> {
+        ibf_filled_up_to_with_size::<N>(N / 2)
+    }
+
+    fn ibf_filled_up_to<const N: usize>(max_elems: usize) -> impl Strategy<Value = IBF<N>> {
+        ibf_filled_up_to_with_size::<N>(max_elems).prop_map(|(_, ibf)| ibf)
+    }
+
     proptest! {
+        #[test]
+        fn sub_itself_is_zero(ibf in ibf_filled_up_to::<80>(100)) {
+            assert!((ibf - ibf).is_empty())
+        }
+
+        #[test]
+        fn sub_is_add_inverse(ibf in ibf_filled_up_to::<80>(100)) {
+            assert!((ibf + (IBF::default() - ibf)).is_empty())
+        }
+
+        #[test]
+        fn add_is_associative((a, b, c) in (ibf_filled_up_to::<80>(100), ibf_filled_up_to::<80>(100), ibf_filled_up_to::<80>(100))) {
+            assert_eq!(((a + b) + c), (a + (b + c)))
+        }
+
+        #[test]
+        fn add_is_commutative((a, b) in (ibf_filled_up_to::<80>(100), ibf_filled_up_to::<80>(100))) {
+            assert_eq!((a + b), (b + a))
+        }
+
         #[test]
         fn ibf_recovers((elems, ibf) in recoverable_ibf::<50>()) {
             let mut iter = ibf.recover();

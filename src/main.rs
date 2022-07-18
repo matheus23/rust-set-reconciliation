@@ -1,4 +1,5 @@
 #[macro_use]
+#[cfg(test)]
 extern crate proptest;
 
 mod ibf;
@@ -6,11 +7,68 @@ mod strata_estimator;
 
 use std::{collections::HashMap, mem};
 
+use rand::RngCore;
+
 use ibf::*;
 use strata_estimator::*;
 
 fn main() {
+    // test_recoverability();
     test_strata();
+}
+
+const N: usize = 80;
+
+fn test_recoverability() {
+    fn test_recoverability_with<const N: usize>(num: usize) -> bool {
+        let mut ibf = IBF::<N>::default();
+        for rand in random_elems().take(num) {
+            ibf.insert(rand);
+        }
+        (_, ibf) = ibf.recover_items();
+        ibf.is_empty()
+    }
+
+    fn test_recoverability_probability<const N: usize>(samples: usize, fill_num: usize) -> f64 {
+        let mut count = 0;
+        for _ in 0..samples {
+            if test_recoverability_with::<N>(fill_num) {
+                count += 1;
+            }
+        }
+        (count as f64) / (samples as f64)
+    }
+
+    let jump_size = 2;
+    let begin = 0;
+    let end = 80;
+    for i in (begin / jump_size)..(end / jump_size) {
+        let fill_num = i * jump_size;
+        let prob = test_recoverability_probability::<N>(2000500, fill_num);
+        println!("Filter of size {N} with {fill_num} elements recovers with probability {prob}");
+    }
+}
+
+struct RandomElems(blake3::OutputReader);
+
+fn random_elems() -> impl Iterator<Item = [u8; HASH_SIZE]> {
+    RandomElems(blake3::Hasher::new().update(&random_elem()).finalize_xof())
+}
+
+impl Iterator for RandomElems {
+    type Item = [u8; HASH_SIZE];
+
+    fn next(&mut self) -> Option<Self::Item> {
+        let mut res = [0u8; HASH_SIZE];
+        self.0.fill(&mut res);
+        Some(res)
+    }
+}
+
+fn random_elem() -> [u8; HASH_SIZE] {
+    let mut randoms = [0u8; HASH_SIZE];
+    rand::thread_rng().fill_bytes(&mut randoms);
+    randoms
 }
 
 fn test_strata() {
@@ -19,8 +77,8 @@ fn test_strata() {
     let mut estimator2 = Estimator::<S>::default();
     let mut difference = Vec::new();
 
-    let item_count = 10_000_000;
-    let diff_count = 100_000;
+    let item_count = 1_000_000;
+    let diff_count = 100;
 
     for i in 0..item_count {
         let item = format!("Hello, for the {i}th time!");
