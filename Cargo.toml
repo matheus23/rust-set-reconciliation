@@ -14,3 +14,5 @@ xxhash-rust = { version = "0.8.5", features = ["xxh3"] }
 [dev-dependencies]
 proptest = "1.0.0"
 
+[profile.release]
+debug = true
