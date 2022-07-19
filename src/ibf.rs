@@ -118,12 +118,13 @@ impl SubAssign for Cell {
     }
 }
 
-// fn map_rand_to_range(rand: u64, range: u64) -> u64 {
-//     let last_32 = rand & 0xFFFF_FFFF;
-//     let first_32 = rand >> 32;
-//     let trunc = last_32 ^ first_32;
-//     trunc * range >> 32
-// }
+// TODO(matheus23) remove. This is unused.
+fn map_rand_to_range(rand: u64, range: u64) -> u64 {
+    let last_32 = rand & 0xFFFF_FFFF;
+    let first_32 = rand >> 32;
+    let trunc = last_32 ^ first_32;
+    trunc * range >> 32
+}
 
 pub fn distinct_hashes_in_range<const N: usize, const K: usize>(
     item_hash: &[u8],
@@ -299,10 +300,12 @@ mod ibf_tests {
     use std::collections::HashSet;
 
     use super::distinct_hashes_in_range;
+    use super::map_rand_to_range;
     use super::IBF;
     use blake3::Hash;
     use proptest::tuple;
     use proptest::{collection::hash_set, prelude::*};
+    use xxhash_rust::xxh3::xxh3_64;
 
     fn hashes(max_num: usize) -> impl Strategy<Value = HashSet<Hash>> {
         hash_set(any::<String>(), 0..max_num).prop_map(|set| {
@@ -390,6 +393,12 @@ mod ibf_tests {
                 }
                 bits[i] = true;
             }
+        }
+
+        #[test]
+        fn test_map_rand_to_range((elem, max) in (any::<String>(), 10u64..1000)) {
+            let value = map_rand_to_range(xxh3_64(elem.as_bytes()), max);
+            assert!(value < max)
         }
     }
 }
